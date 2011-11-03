@@ -2,8 +2,8 @@
  * 
  */
 
+// Create a server based on server/main.js
 var server = require('./server/main.js');
-//var server2 = require('./server2/main.js');
 
+// Tell the server module to call its start function
 server.start();
-//server2.start();

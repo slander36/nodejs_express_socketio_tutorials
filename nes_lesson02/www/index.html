@@ -2,17 +2,108 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
+		<style>
+			body {
+				width:			1000px;
+				margin:			auto;
+				font-family:	tahoma, sans-serif;
+			}
+			#head {
+				text-align:		center;
+				font-size:		2em;
+				padding:			20px;
+			}
+			#body {
+				text-align: 	left;Placeholder
+				font-size: 		1em;
+				-moz-border-radius: 30px;
+				-webkit-border-radius: 30px;
+				boder-radius:	30px;
+				background:		#CCC;
+				padding:		20px;
+			}
+			a:link {
+				color:			#563412;
+			}
+			a:visited {
+				color:			#341256;
+			}
+			a:hover {
+				color:			#123456;
+			}
+			a:active {
+				color:			#345612;
+			}
+		</style>
+		<!-- Tell the page to use socket.io.js for sockets -->
 		<script src='http://localhost:1337/socket.io/socket.io.js'></script>
 	</head>
 	<body>
-	
+		<div id='head'>Use or edit the text below then hit send</div>
+		<div id='body'>
+			<div id='message' class='edit'>
+				Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. 
+				User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded 
+				market pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic 
+				location based strategic investor.
+				<br/><br/>
+				Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral 
+				landing page user base minimum viable product hackathon API mashup FB connect. Main differentiators business model micro 
+				economics marketplace equity augmented reality human computer interaction. Board members super angel preferred stock. 
+				Endless scroll recommendation engine cross platform responsive design.
+				<br/><br/>
+				Tablet publishing HTML5 mobile first really simple syndication meetups white board walls. User experience iterate algorithm 
+				gamification semantic web value add market research stealth. Rockstar developer internet of things bleeding edge social capital. 
+				Term sheet convertible note colluding bootstrapping. Cloud computing subscription model out of the box proactive solution.
+			</div>
+			<br/>
+			<input type='button' id='sendbutton' value='send'/>
+			<br/>
+			<br/>
+			<div id='response' class='noedit'>
+			</div>
+			<br/>
+			<div class='noedit'>Special thanks to <a href='http://startupipsum.co/' target='_blank'>Startup Ipsum</a></div>
+		</div>
 		<script>
 			(function(window, document) {
+				// Create a socket by connecting to http://localhost and port 1337
 				var socket = io.connect('http://localhost',{port:1337});
+				// This will send server/main.js the 'connection' message it is waiting for
 				
+				// When the newly created socket is sent the 'welcome' message from server/main.js
+				// it knows to print the response message to console.
 				socket.on('welcome',function(e) {
 					console.log(e.message);
 				});
+				
+				var sendbutton = document.getElementById('sendbutton');
+				
+				if(sendbutton) {
+					sendbutton.addEventListener('click',function() {
+						// When clicked the contents of `message` will be sent
+						// to the server in the object {message:message}
+						var message = document.getElementById('message').innerHTML;
+						socket.emit('message',{message:message});
+						// Socket is then told that whenever it gets a request `message`
+						// from the server to update the contents of the `response` div
+						socket.on('message',function(e) {
+							document.getElementById('response').innerHTML = e.message;
+						});
+					});
+				}
+				
+				// For formatting purposes
+				
+				var edit = document.getElementsByClassName('edit');
+				for(var i = 0 ; i < edit.length ; i++) {
+					edit[i].setAttribute('contenteditable','true');
+				}
+				
+				var noedit = document.getElementsByClassName('noedit');
+				for(var i = 0 ; i < noedit.length ; i++) {
+					noedit[i].setAttribute('contenteditable','false');
+				}
 			})(this, this.document);
 		</script>
 	</body>
