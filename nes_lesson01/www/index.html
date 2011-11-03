@@ -2,14 +2,35 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
+		<style>
+			body {
+				width:	1000px;
+				margin:	auto;
+				font-family:	tahoma, sans-serif;
+			}
+			#head {
+				text-align:	center;
+				font-size:	2em;
+			}
+			#body {
+				text-align: left;
+				font-size: 1em;
+			}
+		</style>
+		<!-- Tell the page to use socket.io.js for sockets -->
 		<script src='http://localhost:1337/socket.io/socket.io.js'></script>
 	</head>
 	<body>
-	
+		<div id='head'></div>
+		<div id='body'></div>
 		<script>
 			(function(window, document) {
+				// Create a socket by connecting to http://localhost and port 1337
 				var socket = io.connect('http://localhost',{port:1337});
+				// This will send server/main.js the 'connection' message it is waiting for
 				
+				// When the newly created socket is sent the 'welcome' message from server/main.js
+				// it knows to print the response message to console.
 				socket.on('welcome',function(e) {
 					console.log(e.message);
 				});
