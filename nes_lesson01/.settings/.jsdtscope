@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="node_modules/qs/support/expresso/test/|node_modules/connect/lib/middleware/|node_modules/qs/support/should/examples/|node_modules/qs/test/|node_modules/qs/support/expresso/test/serial/|lib/|node_modules/mkdirp/examples/|node_modules/connect/lib/middleware/session/|node_modules/qs/lib/|node_modules/qs/support/should/|node_modules/mime/|lib/router/|testing/|node_modules/mkdirp/|node_modules/qs/|node_modules/qs/support/should/test/|node_modules/qs/support/expresso/lib/|lib/view/|node_modules/qs/support/should/lib/|node_modules/connect/|node_modules/connect/lib/|node_modules/mkdirp/test/" kind="src" path="node_modules/express"/>
+	<classpathentry excluding="router/|view/" kind="src" path="node_modules/express/lib"/>
+	<classpathentry kind="src" path="node_modules/express/lib/router"/>
+	<classpathentry kind="src" path="node_modules/express/lib/view"/>
+	<classpathentry excluding="lib/middleware/|lib/middleware/session/|lib/" kind="src" path="node_modules/express/node_modules/connect"/>
+	<classpathentry excluding="middleware/|middleware/session/" kind="src" path="node_modules/express/node_modules/connect/lib"/>
+	<classpathentry excluding="session/" kind="src" path="node_modules/express/node_modules/connect/lib/middleware"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/connect/lib/middleware/session"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/mime"/>
+	<classpathentry excluding="examples/|test/" kind="src" path="node_modules/express/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/mkdirp/test"/>
+	<classpathentry excluding="support/expresso/test/|support/should/examples/|test/|support/expresso/test/serial/|lib/|support/should/|support/should/test/|support/expresso/lib/|support/should/lib/" kind="src" path="node_modules/express/node_modules/qs"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/lib"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/support/expresso/lib"/>
+	<classpathentry excluding="serial/" kind="src" path="node_modules/express/node_modules/qs/support/expresso/test"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/support/expresso/test/serial"/>
+	<classpathentry excluding="examples/|test/|lib/" kind="src" path="node_modules/express/node_modules/qs/support/should"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/support/should/examples"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/support/should/lib"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/support/should/test"/>
+	<classpathentry kind="src" path="node_modules/express/node_modules/qs/test"/>
+	<classpathentry kind="src" path="node_modules/express/testing"/>
+	<classpathentry excluding="examples/irc-output/|node_modules/socket.io-client/node_modules/xmlhttprequest/tests/|node_modules/redis/examples/|support/node-websocket-client/test/|node_modules/redis/tests/stress/rpushblpop/|node_modules/socket.io-client/node_modules/xmlhttprequest/|node_modules/socket.io-client/node_modules/uglify-js/|node_modules/socket.io-client/bin/|benchmarks/|lib/transports/websocket/|examples/chat/|node_modules/policyfile/lib/|node_modules/socket.io-client/test/node/|node_modules/socket.io-client/test/|node_modules/policyfile/|node_modules/socket.io-client/node_modules/websocket-client/test/|lib/|node_modules/socket.io-client/node_modules/uglify-js/tmp/|test/|support/node-websocket-client/lib/|node_modules/socket.io-client/lib/|node_modules/redis/tests/stress/pubsub/|node_modules/socket.io-client/node_modules/websocket-client/examples/|node_modules/socket.io-client/node_modules/uglify-js/test/|lib/stores/|support/node-websocket-client/examples/|node_modules/redis/lib/parser/|node_modules/socket.io-client/support/test-runner/public/javascript/|node_modules/socket.io-client/lib/vendor/web-socket-js/|node_modules/socket.io-client/support/|node_modules/socket.io-client/lib/transports/|test/leaks/|node_modules/socket.io-client/node_modules/uglify-js/lib/|node_modules/redis/tests/stress/speed/|lib/transports/|node_modules/redis/tests/stress/|node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/|node_modules/redis/tests/|node_modules/redis/|node_modules/socket.io-client/node_modules/websocket-client/lib/|node_modules/socket.io-client/support/test-runner/|node_modules/policyfile/examples/|node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/|node_modules/policyfile/tests/|node_modules/redis/lib/|node_modules/socket.io-client/node_modules/uglify-js/test/unit/|node_modules/socket.io-client/dist/" kind="src" path="node_modules/socket.io"/>
+	<classpathentry kind="src" path="node_modules/socket.io/benchmarks"/>
+	<classpathentry kind="src" path="node_modules/socket.io/examples/chat"/>
+	<classpathentry kind="src" path="node_modules/socket.io/examples/irc-output"/>
+	<classpathentry excluding="transports/websocket/|stores/|transports/" kind="src" path="node_modules/socket.io/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/lib/stores"/>
+	<classpathentry excluding="websocket/" kind="src" path="node_modules/socket.io/lib/transports"/>
+	<classpathentry kind="src" path="node_modules/socket.io/lib/transports/websocket"/>
+	<classpathentry excluding="lib/|examples/|tests/" kind="src" path="node_modules/socket.io/node_modules/policyfile"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/policyfile/examples"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/policyfile/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/policyfile/tests"/>
+	<classpathentry excluding="examples/|tests/stress/rpushblpop/|tests/stress/pubsub/|lib/parser/|tests/stress/speed/|tests/stress/|tests/|lib/" kind="src" path="node_modules/socket.io/node_modules/redis"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/redis/examples"/>
+	<classpathentry excluding="parser/" kind="src" path="node_modules/socket.io/node_modules/redis/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/redis/lib/parser"/>
+	<classpathentry excluding="stress/rpushblpop/|stress/pubsub/|stress/speed/|stress/" kind="src" path="node_modules/socket.io/node_modules/redis/tests"/>
+	<classpathentry excluding="rpushblpop/|pubsub/|speed/" kind="src" path="node_modules/socket.io/node_modules/redis/tests/stress"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/redis/tests/stress/pubsub"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/redis/tests/stress/rpushblpop"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/redis/tests/stress/speed"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/bin"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/dist"/>
+	<classpathentry excluding="vendor/web-socket-js/|transports/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/lib/transports"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js"/>
+	<classpathentry excluding="tmp/|test/|lib/|test/unit/compress/test/|test/unit/compress/expected/|test/unit/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/lib"/>
+	<classpathentry excluding="unit/compress/test/|unit/compress/expected/|unit/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test"/>
+	<classpathentry excluding="compress/test/|compress/expected/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/websocket-client/examples"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/websocket-client/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/websocket-client/test"/>
+	<classpathentry excluding="tests/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests"/>
+	<classpathentry excluding="test-runner/public/javascript/|test-runner/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/support"/>
+	<classpathentry excluding="public/javascript/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/support/test-runner"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/support/test-runner/public/javascript"/>
+	<classpathentry excluding="node/" kind="src" path="node_modules/socket.io/node_modules/socket.io-client/test"/>
+	<classpathentry kind="src" path="node_modules/socket.io/node_modules/socket.io-client/test/node"/>
+	<classpathentry kind="src" path="node_modules/socket.io/support/node-websocket-client/examples"/>
+	<classpathentry kind="src" path="node_modules/socket.io/support/node-websocket-client/lib"/>
+	<classpathentry kind="src" path="node_modules/socket.io/support/node-websocket-client/test"/>
+	<classpathentry excluding="leaks/" kind="src" path="node_modules/socket.io/test"/>
+	<classpathentry kind="src" path="node_modules/socket.io/test/leaks"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
