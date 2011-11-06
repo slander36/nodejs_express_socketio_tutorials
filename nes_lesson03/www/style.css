@@ -1,0 +1,39 @@
+body {
+	width:			1000px;
+	margin:			auto;
+	font-family:	tahoma, sans-serif;
+}
+#head {
+	text-align:		center;
+	font-size:		2em;
+	padding:		20px;
+}
+#body {
+	text-align: 	left;Placeholder
+	font-size: 		1em;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	boder-radius:	30px;
+	background:		#CCC;
+	padding:		20px;
+}
+a:link {
+	color:			#563412;
+}
+a:visited {
+	color:			#341256;
+}
+a:hover {
+	color:			#123456;
+}
+a:active {
+	color:			#345612;
+}
+
+.visible {
+	display:		block;	
+}
+
+.invisible {
+	display:		none;	
+}

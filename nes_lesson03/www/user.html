@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>User</title>
+		<link href='style.css' rel='stylesheet' type='text/css' />
+		<!-- Tell the page to use socket.io.js for sockets -->
+		<script src='/socket.io/socket.io.js'></script>
+	</head>
+	<body>
+		<div id='head'>User Page</div>
+		<div id='login' class='visible'>
+		Name <input type='text' id='getName' placeholder='User name'/>
+		<br/>
+		<input type='button' id='namebutton' value='Submit' />
+		</div>
+		<div id='body' class='invisible'>
+			<div id='setName'></div>
+			<input type='text' id='message' />
+			<br/>
+			<input type='button' id='sendbutton' value='send'/>
+			<br/>
+			<div id='response' class='noedit'>
+			</div>
+			<br/>
+			<div class='noedit'>Special thanks to <a href='http://startupipsum.co/' target='_blank'>Startup Ipsum</a></div>
+		</div>
+		<script>
+			(function(window, document) {
+				
+				//+++Connecting to the Server+++//
+				
+				var socket = io.connect('192.168.2.9',{port:1337});
+				
+				socket.on('welcome',function(e) {
+					console.log(e.message);
+				});
+				
+				//+++Joining the Chat+++//
+				
+				var nameButton = document.getElementById('namebutton');
+				var nameInput = document.getElementById('getName');
+				
+				if(nameButton && nameInput) {
+					nameButton.addEventListener('click',function() {
+						var message = nameInput.value;
+						socket.emit('setName',{name:message});
+						socket.on('getName',function(e) {
+							document.getElementById('setName').innerHTML = e.name;
+							document.getElementById('login').setAttribute('class','invisible');
+							document.getElementById('body').setAttribute('class','visible');
+						});
+					});
+					nameInput.addEventListener('keydown',function(e) {
+						if(e.keyCode == 13) {
+							var message = this.value;
+							socket.emit('setName',{name:message});
+							socket.on('getName',function(e) {
+								document.getElementById('setName').innerHTML = e.name;
+								document.getElementById('login').setAttribute('class','invisible');
+								document.getElementById('body').setAttribute('class','visible');
+							});
+						}
+					});
+				}
+				
+				//+++Deal with people coming and going+++//
+				
+				var responseDiv = document.getElementById('response');
+				
+				socket.on('hasJoined',function(e) {
+					var response = responseDiv.innerHTML;
+					document.getElementById('response').innerHTML = response + "<br/>" + e.name + " has joined the chat";
+				});
+				
+				socket.on('hasLeft',function(e) {
+					var response = responseDiv.innerHTML;
+					document.getElementById('response').innerHTML = response + "<br/>" + e.name + "has left the chat";
+				});
+				
+				//+++Send and Receive Messages+++//
+				
+				var sendButton = document.getElementById('sendbutton');
+				var messageInput = document.getElementById('message');
+				
+				if(sendButton && messageInput) {
+					sendButton.addEventListener('click',function() {
+						var messageOut = messageInput.value;
+						socket.emit('message',{message:messageOut});
+						messageInput.value = "";
+					});
+					messageInput.addEventListener('keydown',function(e) {
+						if(e.keyCode == 13) {
+							var messageOut = this.value;
+							socket.emit('message',{message:messageOut});
+							this.value = "";
+						}
+					});
+				}
+				
+				socket.on('message',function(e) {
+					var messageIn = responseDiv.innerHTML + "<br/>" + e.message;
+					responseDiv.innerHTML = messageIn;
+				});
+				
+			})(this, this.document);
+		</script>
+	</body>
+</html>
