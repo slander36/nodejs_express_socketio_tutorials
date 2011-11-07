@@ -9,13 +9,49 @@ body {
 	padding:		20px;
 }
 #body {
-	text-align: 	left;Placeholder
+	position:		relative;
+	text-align: 	left;
 	font-size: 		1em;
-	-moz-border-radius: 30px;
+}
+.gray {
+	background-color:#BBB;
+}
+.white {
+	background-color:#EEE;
+}
+.rounded {
+	-moz-border-radius:	30px;
 	-webkit-border-radius: 30px;
-	boder-radius:	30px;
-	background:		#CCC;
+	border-radius:	30px;
+}
+.squared {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius:	10px;
+}
+.padded-20 {
 	padding:		20px;
+}
+.padded-5 {
+	padding:		5px;
+}
+#chat {
+	float:			left;
+	width:			705px;
+	margin:			0 5px 0 0;
+}
+#response {
+	height:			200px;
+	overflow-y:		auto;
+}
+#users {
+	float:			left;
+	width:			205px;
+	margin:			0 0 0 5px;
+}
+#userlist {
+	heigth:			200px;
+	overflow-y:		auto;
 }
 a:link {
 	color:			#563412;

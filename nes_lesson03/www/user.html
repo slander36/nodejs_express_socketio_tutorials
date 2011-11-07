@@ -8,31 +8,40 @@
 	</head>
 	<body>
 		<div id='head'>User Page</div>
-		<div id='login' class='visible'>
+		<div id='login' class='visible gray rounded padded-20'>
 		Name <input type='text' id='getName' placeholder='User name'/>
 		<br/>
 		<input type='button' id='namebutton' value='Submit' />
 		</div>
 		<div id='body' class='invisible'>
-			<div id='setName'></div>
-			<input type='text' id='message' />
-			<br/>
-			<input type='button' id='sendbutton' value='send'/>
-			<br/>
-			<div id='response' class='noedit'>
+			<div id='chat' class='gray rounded padded-20'>
+				User Name:<div id='setName'></div>
+				<input type='text' id='message' />
+				<br/>
+				<input type='button' id='sendbutton' value='send'/>
+				<br/>
+				<br/>
+				<div id='response' class='noedit white squared padded-5'>
+				</div>
+				<br/>
+				<div class='noedit'>Special thanks to <a href='http://startupipsum.co/' target='_blank'>Startup Ipsum</a></div>
 			</div>
-			<br/>
-			<div class='noedit'>Special thanks to <a href='http://startupipsum.co/' target='_blank'>Startup Ipsum</a></div>
+			<div id='users' class='gray rounded padded-20'>
+				<b>Current Users:</b>
+				<br/>
+				<br/>
+				<div id='userlist' class='white squared padded-5'></div>
+			</div>
 		</div>
 		<script>
 			(function(window, document) {
 				
 				//+++Connecting to the Server+++//
 				
-				var socket = io.connect('192.168.2.9',{port:1337});
+				var socket = io.connect('http://localhost',{port:1337});
 				
 				socket.on('welcome',function(e) {
-					console.log(e.message);
+					//console.log(e.message);
 				});
 				
 				//+++Joining the Chat+++//

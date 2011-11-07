@@ -36,7 +36,7 @@
 		<script>
 			(function(window, document) {
 				// Create a socket by connecting to http://localhost and port 1337
-				var socket = io.connect('192.168.2.9',{port:1337});
+				var socket = io.connect('http://localhost',{port:1337});
 				// This will send server/main.js the 'connection' message it is waiting for
 				
 				// When the newly created socket is sent the 'welcome' message from server/main.js

@@ -59,11 +59,11 @@ function start() {
 	}
 	
 	function removeUser(i) {
-		if(users[i].userName) {
+		if(users[i] && users[i].userName) {
 			hasLeft(users[i]);
+			console.log('Removed user '+i);
+			users.splice(i,1);
 		}
-		console.log('Removed user '+i);
-		users.splice(i,1);
 	}
 	
 	// Any html request now grabs the page and sends it to the user
