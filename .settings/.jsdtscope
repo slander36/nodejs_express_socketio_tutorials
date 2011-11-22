@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="node_modules/express/node_modules/mkdirp/|node_modules/socket.io/examples/irc-output/|node_modules/express/node_modules/qs/support/should/lib/|node_modules/express/node_modules/mime/|node_modules/socket.io/lib/transports/websocket/|node_modules/express/node_modules/mkdirp/test/|node_modules/express/node_modules/connect/lib/middleware/session/|node_modules/express/node_modules/connect/|node_modules/socket.io/examples/chat/|node_modules/express/lib/view/|node_modules/express/node_modules/qs/support/should/test/|node_modules/socket.io/test/leaks/|node_modules/socket.io/|node_modules/express/node_modules/qs/support/expresso/lib/|node_modules/express/lib/|node_modules/express/node_modules/qs/support/expresso/test/serial/|node_modules/express/node_modules/qs/|node_modules/socket.io/test/|server/|node_modules/express/testing/|node_modules/express/node_modules/qs/test/|node_modules/socket.io/lib/transports/|node_modules/socket.io/support/node-websocket-client/lib/|node_modules/socket.io/support/node-websocket-client/test/|node_modules/express/|node_modules/socket.io/lib/|node_modules/express/lib/router/|node_modules/express/node_modules/qs/support/should/examples/|node_modules/socket.io/lib/stores/|node_modules/express/node_modules/mkdirp/examples/|node_modules/express/node_modules/qs/lib/|node_modules/socket.io/benchmarks/|node_modules/express/node_modules/qs/support/should/|node_modules/express/node_modules/connect/lib/middleware/|node_modules/socket.io/support/node-websocket-client/examples/|node_modules/express/node_modules/connect/lib/|node_modules/express/node_modules/qs/support/expresso/test/" kind="src" path="nes_lesson01"/>
+	<classpathentry excluding="node_modules/mkdirp/|node_modules/qs/support/should/lib/|node_modules/mime/|node_modules/mkdirp/test/|node_modules/connect/lib/middleware/session/|node_modules/connect/|lib/view/|node_modules/qs/support/should/test/|node_modules/qs/support/expresso/lib/|lib/|node_modules/qs/support/expresso/test/serial/|node_modules/qs/|testing/|node_modules/qs/test/|lib/router/|node_modules/qs/support/should/examples/|node_modules/mkdirp/examples/|node_modules/qs/lib/|node_modules/qs/support/should/|node_modules/connect/lib/middleware/|node_modules/connect/lib/|node_modules/qs/support/expresso/test/" kind="src" path="nes_lesson01/node_modules/express"/>
+	<classpathentry excluding="view/|router/" kind="src" path="nes_lesson01/node_modules/express/lib"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/lib/router"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/lib/view"/>
+	<classpathentry excluding="lib/middleware/session/|lib/middleware/|lib/" kind="src" path="nes_lesson01/node_modules/express/node_modules/connect"/>
+	<classpathentry excluding="middleware/session/|middleware/" kind="src" path="nes_lesson01/node_modules/express/node_modules/connect/lib"/>
+	<classpathentry excluding="session/" kind="src" path="nes_lesson01/node_modules/express/node_modules/connect/lib/middleware"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/connect/lib/middleware/session"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/mime"/>
+	<classpathentry excluding="test/|examples/" kind="src" path="nes_lesson01/node_modules/express/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/mkdirp/test"/>
+	<classpathentry excluding="support/should/lib/|support/should/test/|support/expresso/lib/|support/expresso/test/serial/|test/|support/should/examples/|lib/|support/should/|support/expresso/test/" kind="src" path="nes_lesson01/node_modules/express/node_modules/qs"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/lib"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/expresso/lib"/>
+	<classpathentry excluding="serial/" kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/expresso/test"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/expresso/test/serial"/>
+	<classpathentry excluding="lib/|test/|examples/" kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/should"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/should/examples"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/should/lib"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/support/should/test"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/node_modules/qs/test"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/express/testing"/>
+	<classpathentry excluding="examples/irc-output/|lib/transports/websocket/|examples/chat/|test/leaks/|test/|lib/transports/|support/node-websocket-client/lib/|support/node-websocket-client/test/|lib/|lib/stores/|benchmarks/|support/node-websocket-client/examples/" kind="src" path="nes_lesson01/node_modules/socket.io"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/benchmarks"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/examples/chat"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/examples/irc-output"/>
+	<classpathentry excluding="transports/websocket/|transports/|stores/" kind="src" path="nes_lesson01/node_modules/socket.io/lib"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/lib/stores"/>
+	<classpathentry excluding="websocket/" kind="src" path="nes_lesson01/node_modules/socket.io/lib/transports"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/lib/transports/websocket"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/support/node-websocket-client/examples"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/support/node-websocket-client/lib"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/support/node-websocket-client/test"/>
+	<classpathentry excluding="leaks/" kind="src" path="nes_lesson01/node_modules/socket.io/test"/>
+	<classpathentry kind="src" path="nes_lesson01/node_modules/socket.io/test/leaks"/>
+	<classpathentry kind="src" path="nes_lesson01/server"/>
+	<classpathentry excluding="node_modules/express/node_modules/qs/support/expresso/test/serial/|node_modules/express/node_modules/mkdirp/examples/|node_modules/express/node_modules/connect/lib/|node_modules/express/lib/router/|node_modules/express/node_modules/qs/support/should/test/|node_modules/socket.io/benchmarks/|node_modules/express/node_modules/qs/test/|node_modules/express/node_modules/qs/support/should/examples/|node_modules/socket.io/support/node-websocket-client/test/|node_modules/socket.io/|node_modules/socket.io/examples/irc-output/|node_modules/express/node_modules/mkdirp/test/|node_modules/socket.io/lib/|node_modules/socket.io/support/node-websocket-client/lib/|node_modules/express/node_modules/qs/support/expresso/lib/|node_modules/express/testing/|node_modules/socket.io/test/|server/|node_modules/express/node_modules/qs/|node_modules/express/node_modules/connect/|node_modules/express/lib/|node_modules/socket.io/test/leaks/|node_modules/socket.io/examples/chat/|node_modules/express/|node_modules/express/node_modules/qs/support/should/lib/|node_modules/socket.io/lib/transports/websocket/|node_modules/express/node_modules/mime/|node_modules/express/node_modules/qs/support/should/|node_modules/express/node_modules/connect/lib/middleware/|node_modules/express/node_modules/qs/lib/|node_modules/socket.io/lib/transports/|node_modules/express/lib/view/|node_modules/express/node_modules/connect/lib/middleware/session/|node_modules/socket.io/support/node-websocket-client/examples/|node_modules/express/node_modules/qs/support/expresso/test/|node_modules/express/node_modules/mkdirp/|node_modules/socket.io/lib/stores/" kind="src" path="nes_lesson02"/>
+	<classpathentry excluding="node_modules/qs/support/expresso/test/serial/|node_modules/mkdirp/examples/|node_modules/connect/lib/|lib/router/|node_modules/qs/support/should/test/|node_modules/qs/test/|node_modules/qs/support/should/examples/|node_modules/mkdirp/test/|node_modules/qs/support/expresso/lib/|testing/|node_modules/qs/|node_modules/connect/|lib/|node_modules/qs/support/should/lib/|node_modules/mime/|node_modules/qs/support/should/|node_modules/connect/lib/middleware/|node_modules/qs/lib/|lib/view/|node_modules/connect/lib/middleware/session/|node_modules/qs/support/expresso/test/|node_modules/mkdirp/" kind="src" path="nes_lesson02/node_modules/express"/>
+	<classpathentry excluding="router/|view/" kind="src" path="nes_lesson02/node_modules/express/lib"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/lib/router"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/lib/view"/>
+	<classpathentry excluding="lib/|lib/middleware/|lib/middleware/session/" kind="src" path="nes_lesson02/node_modules/express/node_modules/connect"/>
+	<classpathentry excluding="middleware/|middleware/session/" kind="src" path="nes_lesson02/node_modules/express/node_modules/connect/lib"/>
+	<classpathentry excluding="session/" kind="src" path="nes_lesson02/node_modules/express/node_modules/connect/lib/middleware"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/connect/lib/middleware/session"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/mime"/>
+	<classpathentry excluding="examples/|test/" kind="src" path="nes_lesson02/node_modules/express/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/mkdirp/test"/>
+	<classpathentry excluding="support/expresso/test/serial/|support/should/test/|test/|support/should/examples/|support/expresso/lib/|support/should/lib/|support/should/|lib/|support/expresso/test/" kind="src" path="nes_lesson02/node_modules/express/node_modules/qs"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/lib"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/expresso/lib"/>
+	<classpathentry excluding="serial/" kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/expresso/test"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/expresso/test/serial"/>
+	<classpathentry excluding="test/|examples/|lib/" kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/should"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/should/examples"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/should/lib"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/support/should/test"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/node_modules/qs/test"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/express/testing"/>
+	<classpathentry excluding="benchmarks/|support/node-websocket-client/test/|examples/irc-output/|lib/|support/node-websocket-client/lib/|test/|test/leaks/|examples/chat/|lib/transports/websocket/|lib/transports/|support/node-websocket-client/examples/|lib/stores/" kind="src" path="nes_lesson02/node_modules/socket.io"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/benchmarks"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/examples/chat"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/examples/irc-output"/>
+	<classpathentry excluding="transports/websocket/|transports/|stores/" kind="src" path="nes_lesson02/node_modules/socket.io/lib"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/lib/stores"/>
+	<classpathentry excluding="websocket/" kind="src" path="nes_lesson02/node_modules/socket.io/lib/transports"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/lib/transports/websocket"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/support/node-websocket-client/examples"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/support/node-websocket-client/lib"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/support/node-websocket-client/test"/>
+	<classpathentry excluding="leaks/" kind="src" path="nes_lesson02/node_modules/socket.io/test"/>
+	<classpathentry kind="src" path="nes_lesson02/node_modules/socket.io/test/leaks"/>
+	<classpathentry kind="src" path="nes_lesson02/server"/>
+	<classpathentry excluding="node_modules/socket.io/support/node-websocket-client/test/|node_modules/socket.io/lib/stores/|server/|node_modules/express/node_modules/qs/support/should/test/|node_modules/socket.io/support/node-websocket-client/lib/|node_modules/express/node_modules/mkdirp/test/|node_modules/socket.io/lib/|node_modules/express/node_modules/qs/|node_modules/socket.io/test/leaks/|node_modules/express/|node_modules/express/node_modules/mkdirp/|node_modules/express/node_modules/connect/lib/middleware/|node_modules/express/testing/|node_modules/express/node_modules/mkdirp/examples/|node_modules/express/node_modules/mime/|node_modules/socket.io/examples/irc-output/|node_modules/socket.io/lib/transports/|node_modules/express/node_modules/qs/support/should/lib/|node_modules/socket.io/test/|node_modules/express/lib/router/|node_modules/express/node_modules/qs/lib/|node_modules/socket.io/|node_modules/express/node_modules/qs/support/expresso/test/serial/|node_modules/socket.io/examples/chat/|node_modules/socket.io/benchmarks/|node_modules/socket.io/lib/transports/websocket/|node_modules/express/node_modules/connect/|node_modules/express/node_modules/connect/lib/|node_modules/express/lib/|node_modules/express/lib/view/|node_modules/express/node_modules/qs/support/expresso/lib/|node_modules/express/node_modules/qs/support/expresso/test/|node_modules/socket.io/support/node-websocket-client/examples/|node_modules/express/node_modules/connect/lib/middleware/session/|node_modules/express/node_modules/qs/support/should/|node_modules/express/node_modules/qs/test/|node_modules/express/node_modules/qs/support/should/examples/" kind="src" path="nes_lesson03"/>
+	<classpathentry excluding="node_modules/qs/support/should/test/|node_modules/mkdirp/test/|node_modules/qs/|node_modules/mkdirp/|node_modules/connect/lib/middleware/|testing/|node_modules/mkdirp/examples/|node_modules/mime/|node_modules/qs/support/should/lib/|lib/router/|node_modules/qs/lib/|node_modules/qs/support/expresso/test/serial/|node_modules/connect/|node_modules/connect/lib/|lib/|lib/view/|node_modules/qs/support/expresso/lib/|node_modules/qs/support/expresso/test/|node_modules/connect/lib/middleware/session/|node_modules/qs/support/should/|node_modules/qs/test/|node_modules/qs/support/should/examples/" kind="src" path="nes_lesson03/node_modules/express"/>
+	<classpathentry excluding="router/|view/" kind="src" path="nes_lesson03/node_modules/express/lib"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/lib/router"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/lib/view"/>
+	<classpathentry excluding="lib/middleware/|lib/|lib/middleware/session/" kind="src" path="nes_lesson03/node_modules/express/node_modules/connect"/>
+	<classpathentry excluding="middleware/|middleware/session/" kind="src" path="nes_lesson03/node_modules/express/node_modules/connect/lib"/>
+	<classpathentry excluding="session/" kind="src" path="nes_lesson03/node_modules/express/node_modules/connect/lib/middleware"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/connect/lib/middleware/session"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/mime"/>
+	<classpathentry excluding="test/|examples/" kind="src" path="nes_lesson03/node_modules/express/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/mkdirp/test"/>
+	<classpathentry excluding="support/should/test/|support/should/lib/|lib/|support/expresso/test/serial/|support/expresso/lib/|support/expresso/test/|support/should/|test/|support/should/examples/" kind="src" path="nes_lesson03/node_modules/express/node_modules/qs"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/lib"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/expresso/lib"/>
+	<classpathentry excluding="serial/" kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/expresso/test"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/expresso/test/serial"/>
+	<classpathentry excluding="test/|lib/|examples/" kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/should"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/should/examples"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/should/lib"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/support/should/test"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/node_modules/qs/test"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/express/testing"/>
+	<classpathentry excluding="support/node-websocket-client/test/|lib/stores/|support/node-websocket-client/lib/|lib/|test/leaks/|examples/irc-output/|lib/transports/|test/|examples/chat/|benchmarks/|lib/transports/websocket/|support/node-websocket-client/examples/" kind="src" path="nes_lesson03/node_modules/socket.io"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/benchmarks"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/examples/chat"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/examples/irc-output"/>
+	<classpathentry excluding="stores/|transports/|transports/websocket/" kind="src" path="nes_lesson03/node_modules/socket.io/lib"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/lib/stores"/>
+	<classpathentry excluding="websocket/" kind="src" path="nes_lesson03/node_modules/socket.io/lib/transports"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/lib/transports/websocket"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/support/node-websocket-client/examples"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/support/node-websocket-client/lib"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/support/node-websocket-client/test"/>
+	<classpathentry excluding="leaks/" kind="src" path="nes_lesson03/node_modules/socket.io/test"/>
+	<classpathentry kind="src" path="nes_lesson03/node_modules/socket.io/test/leaks"/>
+	<classpathentry kind="src" path="nes_lesson03/server"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
