@@ -38,7 +38,10 @@
 				
 				//+++Connecting to the Server+++//
 				
+				// To use this in a live internal environment make sure and switch the comments
+				// To use this in a commercial environment change localhost to your web address
 				var socket = io.connect('http://localhost',{port:1337});
+				// var socket = io.connect('192.168.2.25',{port:1337});
 				
 				socket.on('welcome',function(e) {
 					//console.log(e.message);
@@ -79,11 +82,13 @@
 				socket.on('hasJoined',function(e) {
 					var response = responseDiv.innerHTML;
 					document.getElementById('response').innerHTML = response + "<br/>" + e.message;
+					responseDiv.scrollTop = responseDiv.scrollHeight;
 				});
 				
 				socket.on('hasLeft',function(e) {
 					var response = responseDiv.innerHTML;
 					document.getElementById('response').innerHTML = response + "<br/>" + e.message;
+					responseDiv.scrollTop = responseDiv.scrollHeight;
 				});
 				
 				socket.on('updateUsers',function(e) {
