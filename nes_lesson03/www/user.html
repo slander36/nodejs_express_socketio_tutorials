@@ -78,12 +78,21 @@
 				
 				socket.on('hasJoined',function(e) {
 					var response = responseDiv.innerHTML;
-					document.getElementById('response').innerHTML = response + "<br/>" + e.name + " has joined the chat";
+					document.getElementById('response').innerHTML = response + "<br/>" + e.message;
 				});
 				
 				socket.on('hasLeft',function(e) {
 					var response = responseDiv.innerHTML;
-					document.getElementById('response').innerHTML = response + "<br/>" + e.name + "has left the chat";
+					document.getElementById('response').innerHTML = response + "<br/>" + e.message;
+				});
+				
+				socket.on('updateUsers',function(e) {
+					var userlist = document.getElementById('userlist');
+					var users = "";
+					for(i in e.users) {
+						users += "<li>" + e.users[i] + "</li>";
+					}
+					userlist.innerHTML = users;
 				});
 				
 				//+++Send and Receive Messages+++//
@@ -109,6 +118,7 @@
 				socket.on('message',function(e) {
 					var messageIn = responseDiv.innerHTML + "<br/>" + e.message;
 					responseDiv.innerHTML = messageIn;
+					responseDiv.scrollTop = responseDiv.scrollHeight;
 				});
 				
 			})(this, this.document);

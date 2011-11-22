@@ -36,18 +36,33 @@ function start() {
 	});
 	
 	function hasJoined(socket) {
+		var message = socket.userName + " has joined the chat.";
 		for(i in users) {
 			if(users[i] != socket) {
-				users[i].emit('hasJoined',{name:socket.userName});
+				users[i].emit('hasJoined',{message:message});
 			}
 		}
+		updateUsers();
 	}
 	
-	function hasLeft(socket) {
+	function hasLeft(name) {
+		var message = name + " has left the chat.";
 		for(i in users) {
-			if(users[i] != socket) {
-				users[i].emit('hasLeft',{name:socket.userName});
-			}
+			users[i].emit('hasLeft',{message:message});
+		}
+		updateUsers();
+	}
+	
+	function updateUsers() {
+		var userNames = [];
+		for(i in users) {
+			if(users[i].userName == null)
+				removeUser(i);
+			else
+				userNames.push(users[i].userName);
+		}
+		for(i in users) {
+			users[i].emit('updateUsers',{users:userNames});
 		}
 	}
 	
@@ -60,9 +75,10 @@ function start() {
 	
 	function removeUser(i) {
 		if(users[i] && users[i].userName) {
-			hasLeft(users[i]);
-			console.log('Removed user '+i);
+			var name = users[i].userName;
 			users.splice(i,1);
+			hasLeft(name);
+			console.log('Removed user '+name);
 		}
 	}
 	
